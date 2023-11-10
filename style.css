@@ -1,0 +1,223 @@
+@import url('null.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url('hover.css');
+
+::-webkit-scrollbar {
+	width: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	color: #000;
+	font-family: 'Roboto', sans-serif;
+}
+
+/* Header content */
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #ffffff;
+	border-bottom: 2px solid rgb(74, 186, 255);
+	box-shadow: 0 2px 20px rgb(198, 198, 198);
+	z-index: 3;
+}
+
+.header-content {
+	min-height: 80px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 0;
+}
+
+.container {
+	max-width: 1100px;
+	margin: auto;
+}
+
+.right-side a {
+	display: inline-block;
+	margin: 0 32px 0 0;
+	text-decoration: none;
+	color: #000;
+	font-weight: 500;
+	font-size: 17px;
+}
+
+.right-side a:nth-child(3):active {
+	scroll-behavior: smooth;
+}
+
+.right-side a:last-child {
+	margin: 0;
+}
+
+/* Main content */
+
+main {
+	margin: 130px 0 0 0;
+}
+
+h2.course-title,
+h2 {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 28px;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.standart-section .card {
+	box-shadow: 0 10px 10px 5px #dedede;
+	max-width: 330px;
+	margin: 0 0 50px 0;
+	padding: 0 24px;
+	transition: all 300ms;
+}
+
+.card:hover {
+	box-shadow: 0 10px 10px 5px rgb(157, 157, 157);
+	transition: all 700ms;
+	transform: scale(1.05);
+}
+
+.card {
+	width: 100%;
+	height: 410px;
+}
+
+.cards-container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	margin: 50px 0 0 0;
+}
+
+.card .cards-img {
+	width: 100%;
+	height: 70%;
+}
+
+.card img {
+	display: block;
+	margin: 16px 0 0 0;
+}
+
+.card .course-subtitle {
+	margin-top: 28px;
+}
+
+.card .course-subtitle a {
+	display: block;
+	text-decoration: none;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 550;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: #000;
+	letter-spacing: 1px;
+}
+
+.card .course-price {
+	margin: 10px 0 0 0;
+}
+
+.card .course-price a {
+	color: indianred;
+	text-decoration: none;
+	font-size: 24px;
+	font-weight: 550;
+}
+
+.about-us-section {
+	margin: 100px 0 0 0;
+	text-align: center;
+}
+
+.about-us-section h2 {
+	margin: 48px 0;
+	font-size: 32px;
+}
+
+.about-us-section p {
+	display: inline-block;
+	width: 680px;
+	text-align: center;
+	font-size: 16px;
+}
+
+.about-us-section .more-btn a {
+	display: inline-block;
+	font-size: 16px;
+	text-decoration: none;
+	background-color: indianred;
+	text-align: center;
+	padding: 12px 40px;
+	border-radius: 50px;
+	font-weight: 550;
+	color: #fff;
+	transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.about-us-section .more-btn a:hover {
+	color: #fff;
+	transform: scale(1.05);
+}
+
+.about-us-section .more-btn {
+	margin: 32px 0;
+}
+
+/* Footer */
+
+footer {
+	margin: 70px 0 32px 0;
+	text-decoration: none;
+	border-top: 1px solid rgb(151, 151, 151);
+	padding: 32px 0 0 0;
+}
+
+footer .contacts {
+	display: flex;
+	justify-content: center;
+}
+
+footer .contacts .link {
+	display: flex;
+	align-items: center;
+	margin: 0 32px 0 0;
+}
+
+footer .contacts .link a {
+	display: inline-block;
+	color: #4d4d4d;
+	text-decoration: none;
+	font-weight: semibold;
+	margin: 0 0 0 8px;
+	transition: all 100ms;
+}
+
+footer .contacts .link a:hover {
+	text-decoration: underline;
+	color: #000;
+	padding-bottom: 8px;
+	transition: all 200ms;
+}
+
+footer .copyright {
+	text-align: center;
+	color: rgb(71, 71, 71);
+	font-weight: bold;
+	margin: 32px 0 0 0;
+}
